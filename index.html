@@ -6,8 +6,10 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <!---Charger le fichier snap.svg pour ensuite pouvoir l'utiliser-->
+    <script src="js/snap.svg-min.js"></script>
     <script src="js/script.js"></script>
+
 
 </head>
 <body>
@@ -18,10 +20,13 @@
         <h1>Le jeu de serpent</h1>
     </header>
 
+    <!-----------balise svg qui va englober tout ce qui ce passe dans le jeu , le ID représente la surface de jeu------>
     <svg id="jeu"></svg>
 
+    <!----Balise span avec un id pour pouvoir aller récupéré cette valeur en JavaScript et changer le pointage---->
     <p>Pointage: <span id="pointage">0</span></p>
 
+    <!-----Boutton pour jouer, ID pour le représenter et l'utiliser en JavaScript----->
     <button id="btnJouer" class="btnJouer">Jouer</button>
 
 </main>
